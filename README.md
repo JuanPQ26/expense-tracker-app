@@ -22,7 +22,6 @@ Una aplicación para rastrear tus gastos y gestionar tu presupuesto personal. De
 ```
 
 2. Navega al directorio del proyecto:
-3. 
 ```bash
   cd expense-tracker
 ```
@@ -32,8 +31,7 @@ Una aplicación para rastrear tus gastos y gestionar tu presupuesto personal. De
   npm install
 ```
 
-4.Inicia el servidor de desarrollo:
-
+4. Inicia el servidor de desarrollo:
 ```bash
 npm run dev
 
