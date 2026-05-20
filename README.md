@@ -4,8 +4,11 @@ Una aplicación para rastrear tus gastos y gestionar tu presupuesto personal. De
 
 ## Características
 
-- Añadir y eliminar gastos.
-- Diseño responsivo y moderno.
+- Añadir y eliminar gastos con validación en tiempo real.
+- Balance general con indicador visual de estado financiero.
+- Diseño responsivo mobile-first con tarjetas y jerarquía visual.
+- Persistencia de datos en localStorage.
+- Tipografía Plus Jakarta Sans con paleta de colores personalizada.
 
 ## Tecnologías Utilizadas
 
@@ -18,7 +21,7 @@ Una aplicación para rastrear tus gastos y gestionar tu presupuesto personal. De
 1. Clona el repositorio:
 
 ```bash
-   git clone https://github.com/tu-usuario/expense-tracker.git
+   git clone https://github.com/JuanPQ26/expense-tracker.git
 ```
 
 2. Navega al directorio del proyecto:
@@ -28,13 +31,12 @@ Una aplicación para rastrear tus gastos y gestionar tu presupuesto personal. De
 
 3. Instala las dependencias:
 ```bash
-  npm install
+  pnpm install
 ```
 
 4. Inicia el servidor de desarrollo:
 ```bash
-npm run dev
-
+pnpm dev
 ```
 
-5. Abre tu navegador y visita http://localhost:3000 para ver la aplicación en funcionamiento.
+5. Abre tu navegador y visita http://localhost:5173 para ver la aplicación en funcionamiento.
