@@ -7,20 +7,32 @@ function Balance() {
 
   const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
 
+  const isNegative = total < 0;
+  const isPositive = total > 0;
+
   return (
-    <div>
-      <h4 className="text-lg font-semibold text-slate-500">Your Balance</h4>
-      <h1
-        className={`text-3xl font-bold ${
-          total < 0
-            ? "text-red-500"
-            : total > 0
-            ? "text-green-500"
-            : "text-slate-800"
+    <div className="bg-white rounded-2xl p-5 sm:p-6 shadow-sm border border-slate-100">
+      <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+        Your Balance
+      </p>
+      <p
+        className={`text-[2rem] sm:text-[2.75rem] font-extrabold leading-none tracking-tight transition-colors ${
+          isNegative
+            ? "text-expense"
+            : isPositive
+              ? "text-income"
+              : "text-slate-800"
         }`}
       >
         ${total}
-      </h1>
+      </p>
+      <p className="text-xs text-slate-400 font-medium mt-2">
+        {isNegative
+          ? "You're in the red"
+          : isPositive
+            ? "You're on track"
+            : "No transactions yet"}
+      </p>
     </div>
   );
 }

@@ -1,5 +1,5 @@
-const saveTransactions = (transactions) => {
-  localStorage.setItem("transactions", JSON.stringify(transactions));
+const saveTransactions = (state) => {
+  localStorage.setItem("transactions", JSON.stringify(state.transactions));
 };
 
 export const getTransactions = () => {

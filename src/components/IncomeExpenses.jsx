@@ -16,14 +16,22 @@ function IncomeExpenses() {
     .toFixed(2);
 
   return (
-    <div className="inc-exp-container">
-      <div>
-        <h4 className="font-bold text-xs text-slate-400">Income</h4>
-        <p className="money plus font-bold text-sm">${income}</p>
+    <div className="grid grid-cols-2 gap-3">
+      <div className="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-100 border-l-4 border-l-income">
+        <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+          Income
+        </p>
+        <p className="text-lg sm:text-xl font-bold text-income">
+          +${income}
+        </p>
       </div>
-      <div>
-        <h4 className="font-bold text-xs text-slate-400">Expense</h4>
-        <p className="money minus font-bold text-sm">${expense}</p>
+      <div className="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-100 border-l-4 border-l-expense">
+        <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+          Expense
+        </p>
+        <p className="text-lg sm:text-xl font-bold text-expense">
+          -${Math.abs(expense).toFixed(2)}
+        </p>
       </div>
     </div>
   );
